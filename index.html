@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Портфолио</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"> 
+              <a class="main-nav__link" href="#my-works" onclick="slowScroll('#my-works')">
+                Мои работы
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#about-me" onclick="slowScroll('#about-me')">
+                Мои навыки
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contact" onclick="slowScroll('#contact')">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="page-header__title">Портфолио</h1>
+      </div>
+    </header>
+    <section class="about-me" id="about-me">
+      <h2>Мои навыки</h2>
+      <ul class="about-me__list">
+        <li class="about-me__item">Адаптивная, фиксированная,семантическая, кроссбраузерная верстка</li>
+        <li class="about-me__item">Gulp</li>
+        <li class="about-me__item">HTML, CSS</li>
+        <li class="about-me__item">Методология БЭМ</li>
+        <li class="about-me__item">Препроцессор Sass</li>
+        <li class="about-me__item">Git, GitHub</li>
+        <li class="about-me__item">Photoshop</li>
+        <li class="about-me__item">Начальные знания Java Script</li>
+        <li class="about-me__item">Препроцессор Sass</li>
+      </ul>
+    </section>
+    <section class="my-works" id="my-works">
+      <div class="my-works__wrapper">
+        <div class="my-works__card">
+          <img src="" alt="Магазин игрушек Мишка">
+          <p class="my-works__description">Учебный макет HTML academy <span class="my-works__name">Магазин игрушек Мишка</span></p>
+        </div>
+        <div class="my-works__card">
+          <img src="" alt="Магазин игрушек Мишка">
+          <p class="my-works__description">Учебный макет HTML academy <span class="my-works__name">Магазин игрушек Мишка</span></p>
+        </div>
+        <div class="my-works__card">
+          <img src="" alt="Магазин игрушек Мишка">
+          <p class="my-works__description">Учебный макет HTML academy <span class="my-works__name">Магазин игрушек Мишка</span></p>
+        </div>
+        <div class="my-works__card">
+          <img src="" alt="Магазин игрушек Мишка">
+          <p class="my-works__description">Учебный макет HTML academy <span class="my-works__name">Магазин игрушек Мишка</span></p>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Контакты</h2>
+        <p class="contacts__email">Почта</p>
+        <p class="contacts__email-adress">sarizava@yandex.ru</p>
+        <p></p>
+        
+    </section>
+    <div class="page-footer__copyright">
+      
+    </div>
+
+    </footer>
+    <!-- <script src="js/script.min.js" type="text/javascript"></script> -->
+    <script type="text/javascript">
+        function slowScroll(id) {
+          var offset = 0;
+          $("html, body").animate ({
+            scrollTop: $(id).offset ().top - offset
+          }, 1000);
+          return false;
+        }
+      </script>
+  </body>
+</html>

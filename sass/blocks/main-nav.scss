@@ -1,0 +1,13 @@
+.main-nav {
+}
+
+.main-nav__list {
+  @include list-reset;
+  display: flex;
+}
+
+.main-nav__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
