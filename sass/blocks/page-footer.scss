@@ -1,10 +1,21 @@
 .page-footer {
   background-color: #fdeebb;
   height: 100vh;
-  padding-top: 80px;
 }
 
 .page-footer__wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
   margin: 0 auto; 
   max-width: 960px;
+  display: flex;
+      align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.page-footer__copyright-text {
+  font-size: 15px;
+  margin: 0;
 }

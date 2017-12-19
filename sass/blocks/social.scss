@@ -1,0 +1,16 @@
+.social {
+  @include list-reset ;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.social__item--vk {
+  padding-right: 50px;
+}
+
+.social__icon {
+  &:hover {
+    fill: #ffc178;
+  }
+}
