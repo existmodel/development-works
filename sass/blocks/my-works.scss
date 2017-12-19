@@ -1,4 +1,25 @@
 .my-works {
-  background-color: #99cc33;
+  background-color: #C7EBFC;
   height: 100vh;
+  padding-top: 80px;
+}
+
+.my-works__wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+      justify-content: space-between;
+}
+
+.my-works__description {
+  width: 275px;
+}
+
+.my-works__title  {
+  @include second-title;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
 }

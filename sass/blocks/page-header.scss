@@ -4,9 +4,13 @@
 }
 
 .page-header__wrapper {
-  // @include center;
+  margin: 0 auto;
+  max-width: 960px;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 
 }
 
@@ -14,6 +18,7 @@
   letter-spacing: 3px;
   font-size: 70px;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
+  margin-top: calc(50vh - 100px);
 
 }

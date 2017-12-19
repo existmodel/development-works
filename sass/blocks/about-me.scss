@@ -1,4 +1,36 @@
 .about-me {
-  background-color: #B8E986;
+  background-color: #ffc178;
   height: 100vh;
+  padding-top: 80px;
+}
+
+.about-me__title {
+  @include second-title;
+}
+
+.about-me__wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.about-me__list-wrapper {
+  display: flex;
+  margin-top: calc(40vh - 100px);
+  width: 700px;
+  justify-content: space-between;
+}
+
+.about-me__item {
+  width: 250px;
+  font-size: 20px;
+  padding-bottom: 10px;
 }

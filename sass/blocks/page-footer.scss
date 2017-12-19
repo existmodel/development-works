@@ -1,8 +1,10 @@
 .page-footer {
-  background-color: #fff79a;
+  background-color: #fdeebb;
   height: 100vh;
+  padding-top: 80px;
 }
 
-.page-footer___wrapper {
-  // @include center;
+.page-footer__wrapper {
+  margin: 0 auto; 
+  max-width: 960px;
 }

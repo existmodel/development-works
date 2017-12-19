@@ -4,10 +4,23 @@
 .main-nav__list {
   @include list-reset;
   display: flex;
+  width: 600px;
+  justify-content: space-between;
+  padding-top: 40px;
 }
 
 .main-nav__link {
-  color: #ffffff;
+  color: $primary-color;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
+  border-bottom: 2px solid $primary-color;
+
+  &:hover {
+    border-bottom: none;
+    // opacity: 0.8;
+  }
+
+  &:active {
+    
+  }
 }
