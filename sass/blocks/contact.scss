@@ -8,7 +8,7 @@
   padding-bottom: 80px;
   width: 600px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .contact__email {
@@ -34,9 +34,10 @@
   }
 }
 
-.contact__email-adress {
-  // padding-bottom: 40px;
-}
 .contact__phone-number {
   font-size: 20px;
+}
+
+.contact__phone-wrapper {
+    padding-right: 25px;
 }
