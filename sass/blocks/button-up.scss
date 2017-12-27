@@ -1,0 +1,18 @@
+.button-up {
+   position: fixed;    
+    /** позиция кнопки scroll to top **/
+    bottom: 30px;
+    right: 30px;   
+    /** картинка кнопки наверх**/ 
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    /** скрываем кнопку в начале **/
+    display:none;
+}
+
+@media (max-width: 768px) {
+  .button-up {
+    display: inline-block;
+  }
+}
