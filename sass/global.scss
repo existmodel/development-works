@@ -35,4 +35,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-// УБРАТЬ
+
+*:focus {
+  outline: 3px solid $orange;
+}

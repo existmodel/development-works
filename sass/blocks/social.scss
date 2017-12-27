@@ -13,4 +13,8 @@
   &:hover {
     fill: #ffc178;
   }
+
+  &:active {
+    fill: $orange;
+  }
 }

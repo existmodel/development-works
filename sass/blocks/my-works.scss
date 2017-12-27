@@ -1,8 +1,5 @@
 .my-works {
   background-color: #C7EBFC;
-  // height: 100vh;
-  // padding-top: 80px;
-  // padding-bottom: 80px;
 }
 
 .my-works__wrapper {
@@ -10,8 +7,8 @@
   max-width: 960px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
-      justify-content: space-between;
+  padding-top: 50px;
+  justify-content: space-between;
 }
 
 .my-works__description {
@@ -29,6 +26,7 @@
 
 .my-works__card {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .my-works__info {
@@ -43,12 +41,12 @@
   transition: all 1s;
   text-align: center;
   padding-top: 20px;
-  // padding-left: 10px;
-  // padding-right: 10px;
-  // line-height: 207px;
 }
 
 .my-works__card:hover .my-works__info {
+  opacity: 1;
+}
+.my-works__card:focus .my-works__info {
   opacity: 1;
 }
 
@@ -66,8 +64,11 @@
     border-bottom: none;
     color: #ffc178;
   }
-}
 
+  &:active {
+    color: $orange;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .my-works__wrapper {
@@ -77,11 +78,8 @@
   }
 
   .my-works__card {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
-
-
-
 }
 
 @media (max-width: 767px)  {
@@ -94,7 +92,5 @@
 
   .my-works__card {
     margin-bottom: 30px;
-}
-
-
+  }
 }

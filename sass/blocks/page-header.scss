@@ -1,7 +1,5 @@
 .page-header {
   background-color: #B8E986;
-  // height: 100vh;
-  // padding-top: 80px;
 }
 
 .page-header__wrapper {
@@ -9,24 +7,30 @@
   margin: 0 auto;
   max-width: 960px;
   display: flex;
-  // justify-content: center;
   align-items: center;
   flex-direction: column;
-  // height: 100vh;
 
 }
 
 .page-header__title {
   letter-spacing: 3px;
   font-size: 70px;
+  line-height: 80px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: calc(50vh - 100px);
+  margin-top: calc(40vh - 100px);
+  text-align: center;
+}
 
+.page-header__second-title {
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: 300;
 }
 
 @media (max-width: 767px)  {
   .page-header__title   {
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 55px;
   }
 }

@@ -32,6 +32,11 @@
     border-bottom: none;
     color: #ffc178;
   }
+
+  &:active {
+    color: $orange;
+    outline: none;
+  }
 }
 
 .contact__phone-number {
@@ -59,9 +64,9 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 414px) { 
   .contact__wrapper {
     padding-bottom: 30px;
-    padding-top: 90px;
+    padding-top: 50px;
   }
 }
