@@ -39,3 +39,12 @@
 .fp-tableCell {
   vertical-align: baseline;
 }
+
+@media (max-width: 767px)  {
+  .about-me__list-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}

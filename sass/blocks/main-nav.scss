@@ -24,3 +24,44 @@
     
   }
 }
+
+.main-nav__toggle {
+  display: none;
+}
+
+@media (max-width: 767px)  {
+  .main-nav__list  {
+    width: 100%;
+    position: absolute;
+    // flex-direction: column;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-nav__toggle  {
+    display: inline-block;
+    font-size: 25px;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid $primary-color;
+    border-top: 2px solid $primary-color;
+    cursor: pointer;
+    background-color: #B8E986;
+    outline-color: #fdeebb;
+
+  }
+
+  .main-nav {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-nav--closed {
+    display: none;
+  }
+}

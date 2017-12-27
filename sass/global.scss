@@ -10,6 +10,7 @@ body {
   min-width: 320px;
   font: $regular-font-weight #{$main-font-size}/#{$main-line-height} $font-stack;
   color: $primary-color;
+  outline-color: #fdeebb;
 }
 
 a {
@@ -33,4 +34,17 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+// УБРАТЬ
+.scroll {
+   position: fixed;    
+    /** позиция кнопки scroll to top **/
+    top: 30px;   
+    /** картинка кнопки наверх**/ 
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    /** скрываем кнопку в начале **/
+    // display:none;
+
 }

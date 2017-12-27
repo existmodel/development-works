@@ -41,3 +41,27 @@
 .contact__phone-wrapper {
     padding-right: 25px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact__wrapper {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 767px)  {
+  .contact__wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact__phone-wrapper {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 414px) {
+  .contact__wrapper {
+    padding-bottom: 30px;
+    padding-top: 90px;
+  }
+}
