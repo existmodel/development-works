@@ -46,7 +46,7 @@ gulp.task("scriptsLibs", function () {
 gulp.task("scripts", function () {
   return gulp.src("js/script.js")
     .pipe(jshint())
-    .pipe(jshint.reporter("default"))
+    // .pipe(jshint.reporter("default"))
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("js"));

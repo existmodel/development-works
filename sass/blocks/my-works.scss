@@ -7,12 +7,11 @@
   max-width: 960px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
+  padding-top: 40px;
   justify-content: space-between;
 }
 
 .my-works__description {
-  width: 250px;
   text-align: center;
 }
 
@@ -27,12 +26,13 @@
 .my-works__card {
   position: relative;
   margin-bottom: 10px;
+  width: 250px;
 }
 
 .my-works__info {
   position: absolute;
-  width: 250px;
-  height: 188px;
+  width: 100%;
+  height: 216px;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -88,9 +88,38 @@
     align-items: center;
     padding-top: 100px;
     padding-bottom: 80px;
+    grid-gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .my-works__card {
     margin-bottom: 30px;
   }
 }
+
+@supports (display: grid) {
+  .my-works__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 50px;
+    align-items: baseline; 
+  }
+
+  .my-works__img {
+    width: 100%;
+  }
+
+  .my-works__card {
+    margin-bottom: 30px;
+    justify-self: center;
+  }
+
+  @media (max-width: 767px) {
+    .my-works__wrapper {
+      grid-gap: 30px;
+    }
+  }
+}
+
+
